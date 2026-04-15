@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { Check, ChevronRight, Clock, CreditCard } from "lucide-react";
 import { categories, allTreatments, formatPrice, paymentModeLabel, type Treatment } from "@/lib/treatments";
@@ -18,6 +18,10 @@ export default function BookingPage() {
   const [time, setTime] = useState<string>("");
   const [details, setDetails] = useState({ name: "", email: "", phone: "", notes: "" });
   const [payChoice, setPayChoice] = useState<"full" | "deposit" | "on_arrival" | null>(null);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+  }, [step]);
 
   const totalPrice = selected.reduce((s, t) => s + t.price, 0);
   const totalDuration = selected.reduce((s, t) => s + t.durationMin, 0);
@@ -133,8 +137,15 @@ export default function BookingPage() {
                 <h2 className="text-2xl mb-4">Pick a date & time</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="min-w-0">
-                    <label className="label">Date</label>
-                    <input type="date" className="input" value={date} onChange={(e) => setDate(e.target.value)} />
+                    <label className="label">Pick a date</label>
+                    <input
+                      type="date"
+                      className="input"
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                      aria-label="Pick a date"
+                    />
+                    {!date && <p className="mt-1 text-xs text-brand-ink/60">Tap to choose a date</p>}
                   </div>
                   <div>
                     <label className="label">Time</label>
