@@ -1,0 +1,96 @@
+{
+  "paymentModes": ["pay_full", "deposit", "pay_on_arrival"],
+  "categories": [
+    {
+      "slug": "consultation",
+      "name": "Consultation",
+      "blurb": "Personalised skin consultation to build your bespoke treatment plan.",
+      "treatments": [
+        { "id": "consult-30", "name": "Consultation Fee", "durationMin": 30, "price": 50, "paymentMode": "pay_on_arrival", "description": "Initial skin consultation and treatment planning." }
+      ]
+    },
+    {
+      "slug": "facials",
+      "name": "Facials & HydraFacials",
+      "blurb": "Hydrating, resurfacing and deep cleansing facial treatments.",
+      "treatments": [
+        { "id": "facial-deep-clean", "name": "Deep Clean Facial", "durationMin": 30, "price": 40, "paymentMode": "pay_on_arrival", "description": "Classic deep cleansing facial to remove impurities." },
+        { "id": "facial-express", "name": "Express Facial with Steam", "durationMin": 30, "price": 45, "paymentMode": "pay_on_arrival" },
+        { "id": "facial-jelly", "name": "Jelly Mask Facial (Gold / Aloe / Jasmine / Lavender)", "durationMin": 30, "price": 80, "paymentMode": "deposit", "depositAmount": 20 },
+        { "id": "facial-oxygen", "name": "Oxygen Facial Skin Treatment", "durationMin": 30, "price": 80, "paymentMode": "deposit", "depositAmount": 20 },
+        { "id": "facial-steam-extract", "name": "Deep Cleanse Steam & Extraction Facial", "durationMin": 30, "price": 80, "paymentMode": "deposit", "depositAmount": 20 },
+        { "id": "hydra-signature", "name": "Signature HydraFacial — 4 Steps", "durationMin": 60, "price": 120, "paymentMode": "deposit", "depositAmount": 30 },
+        { "id": "hydra-deluxe", "name": "Deluxe HydraFacial — 5 Steps", "durationMin": 60, "price": 170, "paymentMode": "deposit", "depositAmount": 40 },
+        { "id": "hydra-platinum", "name": "Platinum HydraFacial — 7 Steps", "durationMin": 60, "price": 220, "paymentMode": "deposit", "depositAmount": 50 }
+      ]
+    },
+    {
+      "slug": "laser-hair-removal",
+      "name": "Laser Hair Removal",
+      "blurb": "Diode laser hair removal for all skin types and body areas.",
+      "treatments": [
+        { "id": "lhr-female-small", "name": "Female Small Area (6 sessions)", "durationMin": 30, "price": 180, "paymentMode": "deposit", "depositAmount": 50 },
+        { "id": "lhr-female-full", "name": "Female Full Body (6 sessions)", "durationMin": 60, "price": 750, "paymentMode": "deposit", "depositAmount": 100 },
+        { "id": "lhr-male-single", "name": "Male Full Body — Single Session", "durationMin": 60, "price": 190, "paymentMode": "deposit", "depositAmount": 50 },
+        { "id": "lhr-male-full", "name": "Male Full Body (6 sessions)", "durationMin": 60, "price": 910, "paymentMode": "deposit", "depositAmount": 100 }
+      ]
+    },
+    {
+      "slug": "hifu",
+      "name": "HIFU Skin Lifting",
+      "blurb": "Non-surgical lifting and tightening using High Intensity Focused Ultrasound.",
+      "treatments": [
+        { "id": "hifu-neck-jaw", "name": "HIFU — Neck / Jaw Lift", "durationMin": 30, "price": 150, "paymentMode": "deposit", "depositAmount": 40 },
+        { "id": "hifu-lower-upper", "name": "HIFU — Lower & Upper Facelift", "durationMin": 30, "price": 225, "paymentMode": "deposit", "depositAmount": 50 },
+        { "id": "hifu-double-chin", "name": "HIFU — Neck / Double Chin / Jowls", "durationMin": 30, "price": 250, "paymentMode": "deposit", "depositAmount": 50 },
+        { "id": "hifu-full", "name": "HIFU — Full Face, Neck & Lower Neck", "durationMin": 60, "price": 300, "paymentMode": "deposit", "depositAmount": 60 },
+        { "id": "hifu-body", "name": "HIFU Body Treatment (per area)", "durationMin": 60, "price": 400, "paymentMode": "deposit", "depositAmount": 80 }
+      ]
+    },
+    {
+      "slug": "chemical-peels",
+      "name": "Chemical Peels",
+      "blurb": "Resurfacing peels to refine texture, brighten tone and clear congestion.",
+      "treatments": [
+        { "id": "peel-biorepeel-face", "name": "Chemical BioRePeel — Face", "durationMin": 30, "price": 120, "paymentMode": "deposit", "depositAmount": 30 },
+        { "id": "peel-biorepeel-body", "name": "Chemical BioRePeel — Body (per area)", "durationMin": 30, "price": 250, "paymentMode": "deposit", "depositAmount": 50 },
+        { "id": "peel-perfect", "name": "The Perfect Peel™", "durationMin": 60, "price": 400, "paymentMode": "deposit", "depositAmount": 80 }
+      ]
+    },
+    {
+      "slug": "injectables",
+      "name": "Injectables",
+      "blurb": "Anti-wrinkle treatments, dermal fillers and Profhilo, performed by medically trained injectors.",
+      "treatments": [
+        { "id": "botox-1", "name": "Botox™ Anti-Wrinkle (1 Area)", "durationMin": 30, "price": 175, "paymentMode": "pay_full" },
+        { "id": "botox-2", "name": "Botox™ Anti-Wrinkle (2 Areas)", "durationMin": 30, "price": 225, "paymentMode": "pay_full" },
+        { "id": "botox-3", "name": "Botox™ Anti-Wrinkle (3 Areas)", "durationMin": 30, "price": 295, "paymentMode": "pay_full" },
+        { "id": "profhilo", "name": "Profhilo Session", "durationMin": 30, "price": 325, "paymentMode": "pay_full" },
+        { "id": "filler-0-5", "name": "Dermal Fillers (0.5ml)", "durationMin": 30, "price": 180, "paymentMode": "pay_full" },
+        { "id": "filler-1", "name": "Dermal Fillers (1ml)", "durationMin": 30, "price": 275, "paymentMode": "pay_full" },
+        { "id": "rhinoplasty", "name": "Non-Surgical Rhinoplasty", "durationMin": 60, "price": 400, "paymentMode": "pay_full" }
+      ]
+    },
+    {
+      "slug": "body",
+      "name": "Body Contouring & Skin",
+      "blurb": "Fat dissolving, cavitation, RF microneedling and CO2 laser resurfacing.",
+      "treatments": [
+        { "id": "cavitation", "name": "Ultrasonic Cavitation (single)", "durationMin": 30, "price": 150, "paymentMode": "deposit", "depositAmount": 40 },
+        { "id": "rf-micro-face", "name": "Microneedling RF — Full Face", "durationMin": 60, "price": 400, "paymentMode": "deposit", "depositAmount": 80 },
+        { "id": "lemon-bottle", "name": "Lemon Bottle Fat Dissolve", "durationMin": 45, "price": 150, "paymentMode": "deposit", "depositAmount": 40 },
+        { "id": "co2-laser", "name": "CO2 Laser Resurfacing", "durationMin": 60, "price": 400, "paymentMode": "deposit", "depositAmount": 80 }
+      ]
+    },
+    {
+      "slug": "iv-drips",
+      "name": "IV Drips & Boosters",
+      "blurb": "Wellness, performance and beauty IV infusions delivered by qualified nurses.",
+      "treatments": [
+        { "id": "iv-performance", "name": "Performance Booster Plus", "durationMin": 30, "price": 120, "paymentMode": "pay_full" },
+        { "id": "iv-fat-burn", "name": "IV Fat Burning Plus", "durationMin": 60, "price": 120, "paymentMode": "pay_full" },
+        { "id": "iv-hair", "name": "Hair Nourishment IV Drip", "durationMin": 60, "price": 150, "paymentMode": "pay_full" }
+      ]
+    }
+  ]
+}

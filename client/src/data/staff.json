@@ -1,0 +1,6 @@
+[
+  { "id": "staff-amira", "name": "Amira K.", "role": "Senior Injector", "bio": "Medically trained nurse with 8+ years in aesthetics. Specialises in natural-looking filler and Profhilo.", "specialties": ["injectables"] },
+  { "id": "staff-jade", "name": "Jade R.", "role": "Skin Therapist", "bio": "HydraFacial & chemical peel specialist focused on congestion and pigmentation.", "specialties": ["facials", "chemical-peels"] },
+  { "id": "staff-sara", "name": "Sara M.", "role": "Laser & HIFU Practitioner", "bio": "Level 4 certified in laser and HIFU treatments, passionate about body confidence.", "specialties": ["laser-hair-removal", "hifu", "body"] },
+  { "id": "staff-naomi", "name": "Naomi T.", "role": "Aesthetic Nurse", "bio": "IV therapy, injectables and consultations.", "specialties": ["iv-drips", "injectables", "consultation"] }
+]
