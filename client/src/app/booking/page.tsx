@@ -132,7 +132,7 @@ export default function BookingPage() {
               <div>
                 <h2 className="text-2xl mb-4">Pick a date & time</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
+                  <div className="min-w-0">
                     <label className="label">Date</label>
                     <input type="date" className="input" value={date} onChange={(e) => setDate(e.target.value)} />
                   </div>

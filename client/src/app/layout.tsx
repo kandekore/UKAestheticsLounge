@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "U.K Aesthetics Lounge — Birmingham Non-Surgical Skin Treatments",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <ScrollToTop />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
